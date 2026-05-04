@@ -1,56 +1,57 @@
-name: Scrape and Deploy DOKA
+name: 🔄 Update DOKA Servers (Professional)
 
+# ==================== المشغلات ====================
 on:
   schedule:
-    # يعمل كل 3 ساعات
+    # يعمل كل 3 ساعات (يمكنك تغيير التوقيت)
     - cron: '0 */3 * * *'
-  workflow_dispatch:  # يسمح بالتشغيل اليدوي
+  workflow_dispatch:      # يسمح بالتشغيل اليدوي من واجهة GitHub
   push:
-    branches: [ main ]
+    branches: [ main ]    # يعمل عند رفع تغييرات على الفرع الرئيسي (اختياري)
 
-# أذونات GitHub Pages
+# ==================== الأذونات (مهم جدًا لصلاحية git push) ====================
 permissions:
-  contents: write
-  pages: write
-  id-token: write
+  contents: write         # يسمح للـ Workflow بالكتابة في المستودع
 
+# ==================== المهام ====================
 jobs:
-  build-and-deploy:
+  scrape-and-deploy:
     runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
     
     steps:
-      - name: 📥 استنساخ المستودع
+      - name: 📥 1. استنساخ المستودع
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0   # يجلب التاريخ الكامل (لتجنب مشاكل الدفع)
 
-      - name: 🐍 إعداد بايثون
+      - name: 🐍 2. تنصيب بايثون
         uses: actions/setup-python@v5
         with:
           python-version: '3.11'
 
-      - name: 📦 تثبيت المكتبات المطلوبة
+      - name: 📦 3. تنصيب مكتبات بايثون
         run: pip install requests
 
-      - name: 🚀 تشغيل سكريبت الكشط
+      - name: 🚀 4. تشغيل سكريبت الكشط (scraper.py)
         run: python scraper.py
 
-      - name: 📤 رفع النتائج للمستودع
+      - name: 📊 5. التحقق من وجود تغييرات
+        id: check_changes
+        run: |
+          if [[ -n "$(git status --porcelain)" ]]; then
+            echo "changes_detected=true" >> $GITHUB_OUTPUT
+          else
+            echo "changes_detected=false" >> $GITHUB_OUTPUT
+          fi
+
+      - name: 📤 6. رفع التغييرات إلى المستودع
+        if: steps.check_changes.outputs.changes_detected == 'true'
         run: |
           git config --global user.name 'github-actions[bot]'
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
-          git add index.html servers_data.json
-          git diff --quiet && git diff --staged --quiet || (git commit -m "🔄 تحديث تلقائي للسيرفرات $(date +'%Y-%m-%d %H:%M')" && git push)
+          git add index.html stats.json
+          git commit -m "🔄 تحديث تلقائي للسيرفرات - $(date +'%Y-%m-%d %H:%M')"
+          git push
 
-      - name: ⚙️ إعداد GitHub Pages
-        uses: actions/configure-pages@v4
-
-      - name: 📎 رفع الملفات
-        uses: actions/upload-pages-artifact@v3
-        with:
-          path: '.'
-
-      - name: 🚀 النشر على GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v4
+      - name: ✅ 7. تأكيد الانتهاء
+        run: echo "🎉 تم تحديث الموقع بنجاح!"
