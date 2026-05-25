@@ -38,7 +38,7 @@
                     <option value="ar">🇸🇦 عربي</option>
                     <option value="en">🇬🇧 English</option>
                 </select>
-                <div class="text-gray-500"><i class="far fa-clock"></i> <span>2026-05-25 06:58</span></div>
+                <div class="text-gray-500"><i class="far fa-clock"></i> <span>2026-05-25 12:15</span></div>
             </div>
         </div>
     </header>
@@ -48,7 +48,7 @@
         <h1 class="text-4xl md:text-6xl font-black mb-4" id="main-title">حرية التصفح بلا حدود</h1>
         <p class="text-gray-600 max-w-2xl mx-auto mb-10" id="main-sub">سيرفرات V2Ray محدثة تلقائياً. اختر بروتوكولك واستمتع بالحرية.</p>
         <div class="inline-flex items-center gap-4 bg-white border border-gray-200 rounded-3xl px-10 py-5 shadow-sm">
-            <span class="text-6xl font-black text-blue-600">9</span>
+            <span class="text-6xl font-black text-blue-600">8</span>
             <span class="text-gray-500" id="counter-label">سيرفر نشط</span>
         </div>
     </section>
@@ -56,10 +56,10 @@
     <!-- تبويبات الفلترة -->
     <section class="max-w-7xl mx-auto px-4 py-8">
         <div class="flex flex-wrap justify-center gap-2">
-            <button class="tab-btn active px-6 py-2 bg-blue-600 text-white rounded-full" data-filter="all">الكل (<span id="count-all">9</span>)</button>
+            <button class="tab-btn active px-6 py-2 bg-blue-600 text-white rounded-full" data-filter="all">الكل (<span id="count-all">8</span>)</button>
             <button class="tab-btn px-6 py-2 bg-gray-100 rounded-full" data-filter="vmess">VMess (<span id="count-vmess">0</span>)</button>
             <button class="tab-btn px-6 py-2 bg-gray-100 rounded-full" data-filter="vless">VLess (<span id="count-vless">6</span>)</button>
-            <button class="tab-btn px-6 py-2 bg-gray-100 rounded-full" data-filter="trojan">Trojan (<span id="count-trojan">2</span>)</button>
+            <button class="tab-btn px-6 py-2 bg-gray-100 rounded-full" data-filter="trojan">Trojan (<span id="count-trojan">1</span>)</button>
             <button class="tab-btn px-6 py-2 bg-gray-100 rounded-full" data-filter="ss">Shadowsocks (<span id="count-ss">1</span>)</button>
         </div>
     </section>
@@ -88,7 +88,7 @@
     <div id="toast" class="fixed bottom-10 left-1/2 -translate-x-1/2 bg-gray-900 text-white px-8 py-3 rounded-full opacity-0 transition-all z-50">✅ تم النسخ!</div>
 
     <script>
-        const serversData = {"vmess": [], "vless": [{"url": "vless://53353c51-ab85-4f1d-b81c-d855a0cdeeba@213.142.132.75:443?type=ws&path=/#", "country": "🌍", "latency": "104ms"}, {"url": "vless://afcac633-0e1a-46c3-bef2-cc01cc0097c8@r1.mizulina.top:22231?allowInsecure=0&sni=r1.mizulina.top&flow=xtls-rprx-vision-udp443&fp=edge&security=tls#", "country": "🌍", "latency": "167ms"}, {"url": "vless://be0e7d89-9c35-4950-a460-d3bf5aae5f91@frnl.locklance.lol:443?encryption=none&flow=xtls-rprx-vision&fp=chrome&pbk=OduZo3TA4hyCu8FUh06W1_bNtIHjLEpyFJzGUsr2fzU&security=reality&sid=1368eab8bfaf0127&sni=frnl.locklance.lol&type=tcp#", "country": "🌍", "latency": "118ms"}, {"url": "vless://200290dc-8698-4284-a6e5-0ffd91be8589@45.89.244.210:35750?security=reality&type=raw&sni=cloudflare.com&fp=chrome&flow=xtls-rprx-vision&sid=01f43c37b8&pbk=rtqKOfjHLaN8qzlOOGHXrxWnEoqzQKQLSi8ZGIMjVlQ&encryption=none#", "country": "🌍", "latency": "201ms"}, {"url": "vless://b54d36d1-43c3-4b8f-a5f8-cf6504db0562@144.31.233.236:7443?encryption=none&fp=chrome&pbk=MbYR2O0XBSeG74gGYpFIofXsILcf5lG2gc36GyURBXQ&security=reality&sid=0199436dd359351b&sni=apple.com&type=grpc#", "country": "🌍", "latency": "149ms"}, {"url": "vless://3c7961e6-6ce7-4e55-8b8a-01a5d663efd4@3.106.214.88:31318?security=reality&type=tcp&sni=www.tesla.com&fp=firefox&flow=xtls-rprx-vision&sid=1b665f78655294&spx=%2F&pbk=uAhNpK_fDxgKKNtYtUs2uB79V28pjFv1-Mh7D4PTaW8&encryption=none#", "country": "🌍", "latency": "60ms"}], "trojan": [{"url": "trojan://BxceQaOe@13.230.159.214:3285?allowInsecure=1&sni=t.me%2Fripaojiedian#", "country": "🌍", "latency": "182ms"}, {"url": "trojan://BxceQaOe@13.114.188.23:8359?allowInsecure=1&sni=t.me%2Fripaojiedian#", "country": "🌍", "latency": "126ms"}], "ss": [{"url": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpkN3poMmxNclhOSDUrOCs4cEt6bHhpQ1U5Tk4wMjJpaCt1QXl4ajVkNHFvPQ==@102.129.229.85:31700#", "country": "🌍", "latency": "250ms"}]};
+        const serversData = {"vmess": [], "vless": [{"url": "vless://afcac633-0e1a-46c3-bef2-cc01cc0097c8@r1.mizulina.top:22231?allowInsecure=0&sni=r1.mizulina.top&flow=xtls-rprx-vision-udp443&fp=edge&security=tls#", "country": "🌍", "latency": "114ms"}, {"url": "vless://b54d36d1-43c3-4b8f-a5f8-cf6504db0562@144.31.233.236:7443?encryption=none&fp=chrome&pbk=MbYR2O0XBSeG74gGYpFIofXsILcf5lG2gc36GyURBXQ&security=reality&sid=0199436dd359351b&sni=apple.com&type=grpc#", "country": "🌍", "latency": "107ms"}, {"url": "vless://3c7961e6-6ce7-4e55-8b8a-01a5d663efd4@3.106.214.88:31318?security=reality&type=tcp&sni=www.tesla.com&fp=firefox&flow=xtls-rprx-vision&sid=1b665f78655294&spx=%2F&pbk=uAhNpK_fDxgKKNtYtUs2uB79V28pjFv1-Mh7D4PTaW8&encryption=none#", "country": "🌍", "latency": "187ms"}, {"url": "vless://afcac633-0e1a-46c3-bef2-cc01cc0097c8@r1.mizulina.top:22231?security=tls&type=tcp&packetEncoding=none&sni=r1.mizulina.top&fp=edge&flow=xtls-rprx-vision#", "country": "🌍", "latency": "208ms"}, {"url": "vless://69a2af58-d74a-44ca-864a-e09b493f4274@lv-geo.dataload-cdn.ru:8443?encryption=none&flow=xtls-rprx-vision&fp=chrome&pbk=mgIiNnujl3pahea0WW3bCFqmdwofldk85e9XD3rQcQc&security=reality&sid=d8d900&sni=www.vk.com&type=tcp#", "country": "🇨🇦", "latency": "176ms"}, {"url": "vless://162f984d-811f-4faa-b200-b15460731ad6@45.192.12.15:2223?security=reality&type=raw&sni=www.ya.ru&fp=chrome&flow=xtls-rprx-vision&sid=09&pbk=5xLCwB8j2l-oqOLyzDyjhJYrHxWrhpU-4QSkLyhh720&encryption=none#", "country": "🌍", "latency": "226ms"}], "trojan": [{"url": "trojan://BxceQaOe@13.114.188.23:8359?allowInsecure=1&sni=t.me%2Fripaojiedian#", "country": "🌍", "latency": "179ms"}], "ss": [{"url": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpkN3poMmxNclhOSDUrOCs4cEt6bHhpQ1U5Tk4wMjJpaCt1QXl4ajVkNHFvPQ==@102.129.229.85:31700#", "country": "🌍", "latency": "161ms"}]};
         const AD_LINK = "https://data527.click/21330bf1d025d41336e6/57154ac610/?placementName=default";
         let currentFilter = 'all';
         let chartInstance = null;
