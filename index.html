@@ -38,7 +38,7 @@
                     <option value="ar">🇸🇦 عربي</option>
                     <option value="en">🇬🇧 English</option>
                 </select>
-                <div class="text-gray-500"><i class="far fa-clock"></i> <span>2026-05-26 22:13</span></div>
+                <div class="text-gray-500"><i class="far fa-clock"></i> <span>2026-05-27 01:59</span></div>
             </div>
         </div>
     </header>
@@ -48,7 +48,7 @@
         <h1 class="text-4xl md:text-6xl font-black mb-4" id="main-title">حرية التصفح بلا حدود</h1>
         <p class="text-gray-600 max-w-2xl mx-auto mb-10" id="main-sub">سيرفرات V2Ray محدثة تلقائياً. اختر بروتوكولك واستمتع بالحرية.</p>
         <div class="inline-flex items-center gap-4 bg-white border border-gray-200 rounded-3xl px-10 py-5 shadow-sm">
-            <span class="text-6xl font-black text-blue-600">10</span>
+            <span class="text-6xl font-black text-blue-600">9</span>
             <span class="text-gray-500" id="counter-label">سيرفر نشط</span>
         </div>
     </section>
@@ -56,10 +56,10 @@
     <!-- تبويبات الفلترة -->
     <section class="max-w-7xl mx-auto px-4 py-8">
         <div class="flex flex-wrap justify-center gap-2">
-            <button class="tab-btn active px-6 py-2 bg-blue-600 text-white rounded-full" data-filter="all">الكل (<span id="count-all">10</span>)</button>
-            <button class="tab-btn px-6 py-2 bg-gray-100 rounded-full" data-filter="vmess">VMess (<span id="count-vmess">0</span>)</button>
-            <button class="tab-btn px-6 py-2 bg-gray-100 rounded-full" data-filter="vless">VLess (<span id="count-vless">8</span>)</button>
-            <button class="tab-btn px-6 py-2 bg-gray-100 rounded-full" data-filter="trojan">Trojan (<span id="count-trojan">2</span>)</button>
+            <button class="tab-btn active px-6 py-2 bg-blue-600 text-white rounded-full" data-filter="all">الكل (<span id="count-all">9</span>)</button>
+            <button class="tab-btn px-6 py-2 bg-gray-100 rounded-full" data-filter="vmess">VMess (<span id="count-vmess">1</span>)</button>
+            <button class="tab-btn px-6 py-2 bg-gray-100 rounded-full" data-filter="vless">VLess (<span id="count-vless">7</span>)</button>
+            <button class="tab-btn px-6 py-2 bg-gray-100 rounded-full" data-filter="trojan">Trojan (<span id="count-trojan">1</span>)</button>
             <button class="tab-btn px-6 py-2 bg-gray-100 rounded-full" data-filter="ss">Shadowsocks (<span id="count-ss">0</span>)</button>
         </div>
     </section>
@@ -88,7 +88,7 @@
     <div id="toast" class="fixed bottom-10 left-1/2 -translate-x-1/2 bg-gray-900 text-white px-8 py-3 rounded-full opacity-0 transition-all z-50">✅ تم النسخ!</div>
 
     <script>
-        const serversData = {"vmess": [], "vless": [{"url": "vless://980231fb-4372-5c81-b696-20aa34d33af0@swe-8t.freeonline.pro:443?security=reality&type=tcp&packetEncoding=none&sni=www.microsoft.com&fp=chrome&flow=xtls-rprx-vision&sid=bdac121c7debdaba&pbk=978-Yxgtd3AWTVfiXEQqCstdwrT1qgsgleGPIRGQDl8#", "country": "🌍", "latency": "94ms"}, {"url": "vless://fae3277c-0541-4ae9-bbbb-8247453ea652@194.226.169.36:443?encryption=none&fp=chrome&pbk=i4Mx_tDND0Xxac3WyA7HgT9rvXdZlXpm5m1EGiQF-Uk&security=reality&sid=b8aa&sni=yahoo.com&type=tcp#", "country": "🌍", "latency": "116ms"}, {"url": "vless://afcac633-0e1a-46c3-bef2-cc01cc0097c8@r1.mizulina.top:22231?sni=r1.mizulina.top&flow=xtls-rprx-vision-udp443&fp=chrome&security=tls#", "country": "🌍", "latency": "220ms"}, {"url": "vless://42ba03da-78cf-413e-9e79-1128ee6ddb30@swed.o4ka-internet.com:443?encryption=none&flow=xtls-rprx-vision&fp=chrome&pbk=V2JprbR_aJkS7uX6anyU3nrswGxdvDQT2HpY4WnzuC8&security=reality&sid=5629431325884ff0&sni=swed.o4ka-internet.com&type=tcp#", "country": "🌍", "latency": "99ms"}, {"url": "vless://b6096ffb-656a-4fec-8840-0d032089a3e0@xsus.xs-us.net:29876?sni=sni.eos-suzhou-4.cmecloud.cn&flow=xtls-rprx-vision-udp443&fp=chrome&security=tls#", "country": "🌍", "latency": "178ms"}, {"url": "vless://afcac633-0e1a-46c3-bef2-cc01cc0097c8@85.234.114.53:443?sni=r1.mizulina.top&flow=xtls-rprx-vision-udp443&fp=edge&security=tls#", "country": "🌍", "latency": "153ms"}, {"url": "vless://afcac633-0e1a-46c3-bef2-cc01cc0097c8@r1.mizulina.top:22231?allowInsecure=0&sni=r1.mizulina.top&flow=xtls-rprx-vision-udp443&fp=edge&security=tls#", "country": "🌍", "latency": "89ms"}, {"url": "vless://3af11c26-c589-4a9c-b811-f068d741a877@193.163.203.76:50580?encryption=none&flow=xtls-rprx-vision&fp=chrome&pbk=ot_qLvMZOPCyVWFt0w8pC-nZT9RRzkdqNFtRtGpB220&security=reality&sid=93290645e01c92f4&sni=kinopoisk.ru&type=tcp#", "country": "🌍", "latency": "214ms"}], "trojan": [{"url": "trojan://7c9fea7c-8def-3dd5-853a-5844f9b04146@ikuai.bot.nu:11777?security=tls&sni=windows11.dpdns.org#", "country": "🌍", "latency": "249ms"}, {"url": "trojan://f6d3aa07a52dbcedcb4731029e2fb6ae@43.207.110.128:5224?allowInsecure=1&sni=www.nintendogames.net#", "country": "🌍", "latency": "100ms"}], "ss": []};
+        const serversData = {"vmess": [{"url": "vmess://eyJ2IjoiMiIsInBzIjoiXHVkODNjXHVkZGVkXHVkODNjXHVkZGYwW29wZW5wcm94eWxpc3QuY29tXSB2bWVzcy1ISyIsImFkZCI6Imd0bS1zZy1jYzU0cTdkMXEwMS4zNjVjbG91ZDAyODUuY29tIiwicG9ydCI6NjAwMSwiYWlkIjowLCJzY3kiOiJhdXRvIiwibmV0IjoidGNwIiwidHlwZSI6Im5vbmUiLCJ0bHMiOiIiLCJpZCI6ImEwMzA4NDJhLWQyOWEtNGVhOS1hNzc2LTE0ZmM0YjllMTAyZCIsInNraXAtY2VydC12ZXJpZnkiOnRydWV9", "country": "🌍", "latency": "163ms"}], "vless": [{"url": "vless://fae3277c-0541-4ae9-bbbb-8247453ea652@194.226.169.36:443?encryption=none&fp=chrome&pbk=i4Mx_tDND0Xxac3WyA7HgT9rvXdZlXpm5m1EGiQF-Uk&security=reality&sid=b8aa&sni=yahoo.com&type=tcp#", "country": "🌍", "latency": "169ms"}, {"url": "vless://afcac633-0e1a-46c3-bef2-cc01cc0097c8@r1.mizulina.top:22231?sni=r1.mizulina.top&flow=xtls-rprx-vision-udp443&fp=chrome&security=tls#", "country": "🌍", "latency": "128ms"}, {"url": "vless://42ba03da-78cf-413e-9e79-1128ee6ddb30@swed.o4ka-internet.com:443?encryption=none&flow=xtls-rprx-vision&fp=chrome&pbk=V2JprbR_aJkS7uX6anyU3nrswGxdvDQT2HpY4WnzuC8&security=reality&sid=5629431325884ff0&sni=swed.o4ka-internet.com&type=tcp#", "country": "🌍", "latency": "180ms"}, {"url": "vless://b6096ffb-656a-4fec-8840-0d032089a3e0@xsus.xs-us.net:29876?sni=sni.eos-suzhou-4.cmecloud.cn&flow=xtls-rprx-vision-udp443&fp=chrome&security=tls#", "country": "🌍", "latency": "182ms"}, {"url": "vless://afcac633-0e1a-46c3-bef2-cc01cc0097c8@85.234.114.53:443?sni=r1.mizulina.top&flow=xtls-rprx-vision-udp443&fp=edge&security=tls#", "country": "🌍", "latency": "110ms"}, {"url": "vless://afcac633-0e1a-46c3-bef2-cc01cc0097c8@r1.mizulina.top:22231?allowInsecure=0&sni=r1.mizulina.top&flow=xtls-rprx-vision-udp443&fp=edge&security=tls#", "country": "🌍", "latency": "208ms"}, {"url": "vless://3af11c26-c589-4a9c-b811-f068d741a877@193.163.203.76:50580?encryption=none&flow=xtls-rprx-vision&fp=chrome&pbk=ot_qLvMZOPCyVWFt0w8pC-nZT9RRzkdqNFtRtGpB220&security=reality&sid=93290645e01c92f4&sni=kinopoisk.ru&type=tcp#", "country": "🌍", "latency": "197ms"}], "trojan": [{"url": "trojan://f6d3aa07a52dbcedcb4731029e2fb6ae@43.207.110.128:5224?allowInsecure=1&sni=www.nintendogames.net#", "country": "🌍", "latency": "112ms"}], "ss": []};
         const AD_LINK = "https://data527.click/21330bf1d025d41336e6/57154ac610/?placementName=default";
         let currentFilter = 'all';
         let chartInstance = null;
