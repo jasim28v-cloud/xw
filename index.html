@@ -38,7 +38,7 @@
                     <option value="ar">🇸🇦 عربي</option>
                     <option value="en">🇬🇧 English</option>
                 </select>
-                <div class="text-gray-500"><i class="far fa-clock"></i> <span>2026-06-27 13:01</span></div>
+                <div class="text-gray-500"><i class="far fa-clock"></i> <span>2026-06-27 15:56</span></div>
             </div>
         </div>
     </header>
@@ -48,7 +48,7 @@
         <h1 class="text-4xl md:text-6xl font-black mb-4" id="main-title">حرية التصفح بلا حدود</h1>
         <p class="text-gray-600 max-w-2xl mx-auto mb-10" id="main-sub">سيرفرات V2Ray محدثة تلقائياً. اختر بروتوكولك واستمتع بالحرية.</p>
         <div class="inline-flex items-center gap-4 bg-white border border-gray-200 rounded-3xl px-10 py-5 shadow-sm">
-            <span class="text-6xl font-black text-blue-600">11</span>
+            <span class="text-6xl font-black text-blue-600">9</span>
             <span class="text-gray-500" id="counter-label">سيرفر نشط</span>
         </div>
     </section>
@@ -56,10 +56,10 @@
     <!-- تبويبات الفلترة -->
     <section class="max-w-7xl mx-auto px-4 py-8">
         <div class="flex flex-wrap justify-center gap-2">
-            <button class="tab-btn active px-6 py-2 bg-blue-600 text-white rounded-full" data-filter="all">الكل (<span id="count-all">11</span>)</button>
+            <button class="tab-btn active px-6 py-2 bg-blue-600 text-white rounded-full" data-filter="all">الكل (<span id="count-all">9</span>)</button>
             <button class="tab-btn px-6 py-2 bg-gray-100 rounded-full" data-filter="vmess">VMess (<span id="count-vmess">0</span>)</button>
-            <button class="tab-btn px-6 py-2 bg-gray-100 rounded-full" data-filter="vless">VLess (<span id="count-vless">4</span>)</button>
-            <button class="tab-btn px-6 py-2 bg-gray-100 rounded-full" data-filter="trojan">Trojan (<span id="count-trojan">4</span>)</button>
+            <button class="tab-btn px-6 py-2 bg-gray-100 rounded-full" data-filter="vless">VLess (<span id="count-vless">3</span>)</button>
+            <button class="tab-btn px-6 py-2 bg-gray-100 rounded-full" data-filter="trojan">Trojan (<span id="count-trojan">3</span>)</button>
             <button class="tab-btn px-6 py-2 bg-gray-100 rounded-full" data-filter="ss">Shadowsocks (<span id="count-ss">3</span>)</button>
         </div>
     </section>
@@ -88,7 +88,7 @@
     <div id="toast" class="fixed bottom-10 left-1/2 -translate-x-1/2 bg-gray-900 text-white px-8 py-3 rounded-full opacity-0 transition-all z-50">✅ تم النسخ!</div>
 
     <script>
-        const serversData = {"vmess": [], "vless": [{"url": "vless://083471bf-bbf4-4e1d-8953-912b8d3b6255@82.202.177.144:5269?security=reality&encryption=none&pbk=hx1gkWBL2ixtwQSGXEvLT1Yz8GBsCFWriz_WLzLQNHQ&headerType=none&fp=chrome&allowinsecure=0&type=tcp&sni=max.ru&sid=4eb166dbed98e63d#", "country": "🌍", "latency": "145ms"}, {"url": "vless://dfc0cb9d-f005-41b0-848c-7703bd39d0de@31.76.113.29:443?security=reality&type=tcp&packetEncoding=xudp&sni=it.s3-cloud.xyz&fp=chrome&flow=xtls-rprx-vision&sid=7a3f9e2b1c8d4f6a&pbk=zPi2L9vrl2hkaCTT3lZTzBna-qz6JrteRjDz1i-DsxY&encryption=none#", "country": "🌍", "latency": "144ms"}, {"url": "vless://2c212fbb-08f9-4be0-a128-b10892111d6d@45.67.139.162:80?encryption=none&security=reality&sni=www.sony.com&fp=chrome&pbk=mjkj2VuAfc9eoRfIVNaHgUV7fZR40XgnjeE31hVVR24&sid=c1&type=tcp&headerType=none#", "country": "🌍", "latency": "223ms"}, {"url": "vless://e3e90161-fe65-443a-a3a4-e0e3a73704ca@95.85.227.25:443?security=reality&type=tcp&packetEncoding=xudp&sni=pol1.hatvpn.org&fp=chrome&flow=xtls-rprx-vision&sid=19d6296d2621d9fa&pbk=PL-jIhHOxLpCUmnDvMEsB3YY3n8o7smiAT0P_SV6RCM&encryption=none#", "country": "🌍", "latency": "108ms"}], "trojan": [{"url": "trojan://63872b0d-87dd-4474-b690-92773af2922e@kkvlvvq-a.catcat321.com:20035?allowInsecure=1&sni=hk.catxstar.com#", "country": "🌍", "latency": "147ms"}, {"url": "trojan://BxceQaOe@54.46.109.132:20744?allowInsecure=1&sni=t.me%2Fripaojiedian#", "country": "🌍", "latency": "234ms"}, {"url": "trojan://BxceQaOe@54.46.109.132:22657?allowInsecure=1&sni=t.me%2Fripaojiedian#", "country": "🌍", "latency": "220ms"}, {"url": "trojan://7e70223b-f331-41d5-9313-02b8d2df2885@d1.catcat321.com:54007?allowInsecure=1&sni=d.usj1.cat.bilibili.com#", "country": "🌍", "latency": "131ms"}], "ss": [{"url": "ss://YWVzLTI1Ni1nY206OEpDc1Bzc2ZnUzh0aVJ3aU1saEFSZz09@15.204.254.187:12000#", "country": "🌍", "latency": "188ms"}, {"url": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpJLWJQM2xGaC5kVEczWGl0RjdYdFZLODNDWjdySTJVdD1u@45.32.122.179:23027#", "country": "🌍", "latency": "202ms"}, {"url": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpUV0c3SjFLUjVLc1BhVjVxWkkrcmlldWVLeHhhZlpTcENI@45.77.232.213:15675#", "country": "🌍", "latency": "200ms"}]};
+        const serversData = {"vmess": [], "vless": [{"url": "vless://dfc0cb9d-f005-41b0-848c-7703bd39d0de@31.76.113.29:443?security=reality&type=tcp&packetEncoding=xudp&sni=it.s3-cloud.xyz&fp=chrome&flow=xtls-rprx-vision&sid=7a3f9e2b1c8d4f6a&pbk=zPi2L9vrl2hkaCTT3lZTzBna-qz6JrteRjDz1i-DsxY&encryption=none#", "country": "🌍", "latency": "238ms"}, {"url": "vless://2c212fbb-08f9-4be0-a128-b10892111d6d@45.67.139.162:80?encryption=none&security=reality&sni=www.sony.com&fp=chrome&pbk=mjkj2VuAfc9eoRfIVNaHgUV7fZR40XgnjeE31hVVR24&sid=c1&type=tcp&headerType=none#", "country": "🌍", "latency": "239ms"}, {"url": "vless://e3e90161-fe65-443a-a3a4-e0e3a73704ca@95.85.227.25:443?security=reality&type=tcp&packetEncoding=xudp&sni=pol1.hatvpn.org&fp=chrome&flow=xtls-rprx-vision&sid=19d6296d2621d9fa&pbk=PL-jIhHOxLpCUmnDvMEsB3YY3n8o7smiAT0P_SV6RCM&encryption=none#", "country": "🌍", "latency": "133ms"}], "trojan": [{"url": "trojan://BxceQaOe@54.46.109.132:20744?allowInsecure=1&sni=t.me%2Fripaojiedian#", "country": "🌍", "latency": "140ms"}, {"url": "trojan://BxceQaOe@54.46.109.132:22657?allowInsecure=1&sni=t.me%2Fripaojiedian#", "country": "🌍", "latency": "90ms"}, {"url": "trojan://7e70223b-f331-41d5-9313-02b8d2df2885@d1.catcat321.com:54007?allowInsecure=1&sni=d.usj1.cat.bilibili.com#", "country": "🌍", "latency": "106ms"}], "ss": [{"url": "ss://YWVzLTI1Ni1nY206OEpDc1Bzc2ZnUzh0aVJ3aU1saEFSZz09@15.204.254.187:12000#", "country": "🌍", "latency": "156ms"}, {"url": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpJLWJQM2xGaC5kVEczWGl0RjdYdFZLODNDWjdySTJVdD1u@45.32.122.179:23027#", "country": "🌍", "latency": "153ms"}, {"url": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpUV0c3SjFLUjVLc1BhVjVxWkkrcmlldWVLeHhhZlpTcENI@45.77.232.213:15675#", "country": "🌍", "latency": "65ms"}]};
         const AD_LINK = "https://data527.click/21330bf1d025d41336e6/57154ac610/?placementName=default";
         let currentFilter = 'all';
         let chartInstance = null;
