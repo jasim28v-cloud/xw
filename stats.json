@@ -1,10 +1,10 @@
 {
-  "last_updated": "2026-07-29T01:16:39.967789",
-  "total_servers": 18,
+  "last_updated": "2026-07-29T05:39:39.711813",
+  "total_servers": 19,
   "by_protocol": {
-    "vmess": 4,
-    "vless": 8,
+    "vmess": 3,
+    "vless": 11,
     "trojan": 4,
-    "ss": 2
+    "ss": 1
   }
 }
